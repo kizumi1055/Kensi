@@ -22,7 +22,7 @@ header {
 }
 
 nav a {
-  margin: 0 15px;
+  margin: 0 13px;
   text-decoration: none;
   color: #111;
   font-weight: 300;
@@ -42,11 +42,11 @@ main {
 
 h1, h2 {
   font-weight: 300;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 p {
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   font-size: 1rem;
 }
 
