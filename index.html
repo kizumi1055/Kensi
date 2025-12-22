@@ -1,35 +1,90 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>郁谦止 × 景卿 CP 网站</title>
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<title>郁谦止 × 景卿</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: "PingFang SC", "Helvetica Neue", sans-serif;
+  background: #ffffff;
+  color: #111;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+}
+
+header {
+  text-align: center;
+  padding: 24px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+nav a {
+  margin: 0 14px;
+  text-decoration: none;
+  color: #111;
+  font-size: 13px;
+}
+
+main {
+  padding: 48px 24px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 200;
+  margin-bottom: 24px;
+}
+
+p {
+  max-width: 520px;
+  margin: 0 auto 16px;
+  line-height: 1.8;
+}
+
+.line {
+  width: 60px;
+  height: 1px;
+  background: #ccc;
+  margin: 32px auto;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+</style>
 </head>
+
 <body>
-  <header>
-    <nav>
-      <a href="index.html">首页</a >
-      <a href="about.html">关于</a >
-      <a href="daily.html">日常</a >
-      <a href="crowning.html">冠名</a >
-    </nav>
-  </header>
+<header>
+  <nav>
+    <a href="index.html">首页</a >
+    <a href="about.html">关于</a >
+    <a href="daily.html">日常</a >
+    <a href="crowning.html">冠名</a >
+  </nav>
+</header>
 
-  <main class="fade-in">
-    <section class="intro">
-      <h1>郁谦止 × 景卿</h1>
-      <p>欢迎来到我们的 CP 小天地，这里记录着郁谦止和景卿的点点滴滴。</p >
-      <p>黑白简约、可爱风格，每一页都是我们的故事小插画。</p >
-    </section>
+<main>
+  <h1>郁谦止 × 景卿</h1>
 
-    <section class="decor">
-      <div class="line"></div>
-      <div class="dot"></div>
-      <div class="line"></div>
-    </section>
-  </main>
+  <p>
+    这是一个安静的小网站，用来记录郁谦止和景卿之间那些微不足道、却反复被想起的瞬间。
+  </p >
+  <p>
+    黑白、极简、没有多余装饰。像一段被轻轻保存下来的关系。
+  </p >
 
-  <script src="js/script.js"></script>
+  <div class="line"></div>
+
+  <p>
+    有些名字只要并排出现，就已经足够完整。
+  </p >
+</main>
 </body>
 </html>
