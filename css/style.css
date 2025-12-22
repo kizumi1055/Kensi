@@ -1,0 +1,91 @@
+/* 基本重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 黑白极简色彩 */
+body {
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  background-color: #fff;
+  color: #111;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* 导航栏 */
+header {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 300;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #888;
+}
+
+/* 页面内容 */
+main {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1, h2 {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* 可爱装饰线条 */
+.decor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.line {
+  width: 50px;
+  height: 1px;
+  background: #ccc;
+  margin: 0 10px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: #ccc;
+  border-radius: 50%;
+}
+
+/* 淡入动画 */
+.fade-in {
+  animation: fadeIn 1s ease-in forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* 可爱小字体效果 */
+p, h1, h2, nav a {
+  font-family: 'DFKai-SB', 'PingFang SC', sans-serif;
+  letter-spacing: 0.5px;
+}
