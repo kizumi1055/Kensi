@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关于 - 郁谦止 × 景卿</title>
+<style>
+body { font-family:"Helvetica Neue","Microsoft YaHei",sans-serif; font-weight:100; margin:0; padding:0; background:#fff; color:#000; line-height:1.8; }
+header { background:#fff; padding:1rem 0; text-align:center; border-bottom:1px solid #eee; position: sticky; top:0; z-index:10; }
+nav a { margin:0 15px; text-decoration:none; color:#000; font-weight:100; transition:color 0.3s; }
+nav a:hover { color:#555; }
+main { padding:3rem 2rem; max-width:800px; margin:auto; text-align:center; }
+footer { text-align:center; padding:2rem; border-top:1px solid #eee; color:#666; }
+section { opacity:0; transform:translateY(30px); animation: fadeInUp 1s forwards; }
+section:nth-child(1){animation-delay:0.3s;} section:nth-child(2){animation-delay:0.6s;}
+@keyframes fadeInUp { to {opacity:1; transform:translateY(0);} }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>关于</h1>
+    <nav>
+        <a href=" ">首页</a >
+        <a href="about.html">关于</a >
+        <a href="daily.html">日常</a >
+        <a href="crowning.html">冠名</a >
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>关于我们</h2>
+        <p>这里讲述郁谦止和景卿的故事背景和性格特点。</p >
+        <p>他们相遇如风拂湖面，静谧而温柔，每一个瞬间都值得纪念。</p >
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 郁谦止 × 景卿 | 极简 CP 网站</p >
+</footer>
+
+</body>
+</html>
