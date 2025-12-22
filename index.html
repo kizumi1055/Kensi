@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>郁谦止 × 景卿 - 首页</title>
-    <style>
-        body { background:#fff; color:#000; font-family: "Helvetica Neue", sans-serif; font-weight:100; margin:0; padding:0;}
-        header { padding:20px; text-align:center; border-bottom:1px solid #000;}
-        nav a { margin:0 15px; text-decoration:none; color:#000; font-weight:100; }
-        main { padding:40px; }
-        section { opacity:0; transform:translateY(20px); animation: fadeInUp 1s forwards; margin-bottom:40px;}
-        section:nth-child(1){ animation-delay:0.3s; }
-        section:nth-child(2){ animation-delay:0.6s; }
-        @keyframes fadeInUp { to { opacity:1; transform:translateY(0); } }
-        img { max-width:100%; height:auto; display:block; margin-top:20px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>郁谦止 × 景卿 CP 网站</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>郁谦止 × 景卿</h1>
-        <nav>
-            <a href="index.html">首页</a >
-            <a href="about.html">关于</a >
-            <a href="daily.html">日常</a >
-            <a href="crowning.html">冠名</a >
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>欢迎来到我们的首页</h2>
-            <p>这里是郁谦止和景卿的 CP 网站首页，展示温暖的故事和瞬间。</p >
-            < img src="img/home.jpg" alt="首页图片">
-        </section>
-    </main>
+  <header>
+    <nav>
+      <a href="index.html">首页</a >
+      <a href="about.html">关于</a >
+      <a href="daily.html">日常</a >
+      <a href="crowning.html">冠名</a >
+    </nav>
+  </header>
+
+  <main class="fade-in">
+    <section class="intro">
+      <h1>郁谦止 × 景卿</h1>
+      <p>欢迎来到我们的 CP 小天地，这里记录着郁谦止和景卿的点点滴滴。</p >
+      <p>黑白简约、可爱风格，每一页都是我们的故事小插画。</p >
+    </section>
+
+    <section class="decor">
+      <div class="line"></div>
+      <div class="dot"></div>
+      <div class="line"></div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
