@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>郁谦止 × 景卿 - 日常</title>
+    <style>
+        body { background:#fff; color:#000; font-family: "Helvetica Neue", sans-serif; font-weight:100; margin:0; padding:0;}
+        header { padding:20px; text-align:center; border-bottom:1px solid #000;}
+        nav a { margin:0 15px; text-decoration:none; color:#000; font-weight:100; }
+        main { padding:40px; }
+        section { opacity:0; transform:translateY(20px); animation: fadeInUp 1s forwards; margin-bottom:40px;}
+        section:nth-child(1){ animation-delay:0.3s; }
+        @keyframes fadeInUp { to { opacity:1; transform:translateY(0); } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>郁谦止 × 景卿</h1>
+        <nav>
+            <a href=" ">首页</a >
+            <a href="about.html">关于</a >
+            <a href="daily.html">日常</a >
+            <a href="crowning.html">冠名</a >
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>日常点滴</h2>
+            <p>这里记录了郁谦止和景卿的日常互动、趣事和温暖瞬间。</p >
+        </section>
+    </main>
+</body>
+</html>
