@@ -143,22 +143,35 @@ p {
 </main>
 
 <script>
+/* ====== 点击缩略图，打开大图 ====== */
 function openViewer(img) {
-  const viewer = document.getElementById('viewer');
-  const viewerImg = document.getElementById('viewer-img');
+  const viewer = document.getElementById("viewer");
+  const viewerImg = document.getElementById("viewer-img");
+
+  if (!viewer || !viewerImg) {
+    alert("viewer 或 viewer-img 没找到");
+    return;
+  }
+
   viewerImg.src = img.src;
-  viewer.style.display = 'flex';
-  setTimeout(() => {
-    viewer.classList.add('show');
-  }, 10);
+  viewer.style.display = "flex";
+
+  // 强制浏览器刷新一次样式（避免动画不触发）
+  viewer.offsetHeight;
+
+  viewer.classList.add("show");
 }
 
+/* ====== 点击遮罩，关闭大图 ====== */
 function closeViewer() {
-  const viewer = document.getElementById('viewer');
-  viewer.classList.remove('show');
+  const viewer = document.getElementById("viewer");
+  if (!viewer) return;
+
+  viewer.classList.remove("show");
+
   setTimeout(() => {
-    viewer.style.display = 'none';
-  }, 400);
+    viewer.style.display = "none";
+  }, 300);
 }
 </script>
   
