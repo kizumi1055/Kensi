@@ -118,7 +118,7 @@ p {
 .qa-list {
   max-width: 640px;
   margin: 0 auto;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 /* 单条 Q&A */
@@ -133,6 +133,8 @@ p {
   color: #222;
   letter-spacing: 0.05em;
   position: relative;
+  font-size: 12px;      /* 👈 字变小 */
+  line-height: 1.6;     /* 👈 行距拉开 */
 }
 
 /* 小箭头 */
@@ -154,14 +156,15 @@ p {
   max-height: 0;
   overflow: hidden;
   color: #666;
-  line-height: 1.8;
+  font-size: 12px;      /* 👈 字变小 */
+  line-height: 2.0;     /* 👈 行距明显拉开 */
   transition: max-height 0.4s ease;
   padding-right: 16px;
 }
 
 /* 展开答案 */
 .qa-item.open .qa-answer {
-  max-height: 150px;
+  max-height: 400px;
   margin-top: 12px;
 }
 
