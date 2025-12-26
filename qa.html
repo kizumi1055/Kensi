@@ -114,6 +114,57 @@ p {
   line-height: 1.9;
 }
 
+/* Q&A 整体 */
+.qa-list {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+/* 单条 Q&A */
+.qa-item {
+  border-bottom: 1px solid #eee;
+  padding: 16px 0;
+}
+
+/* 问题 */
+.qa-question {
+  cursor: pointer;
+  color: #222;
+  letter-spacing: 0.05em;
+  position: relative;
+}
+
+/* 小箭头 */
+.qa-question::after {
+  content: "＋";
+  position: absolute;
+  right: 0;
+  color: #999;
+  transition: transform 0.3s ease;
+}
+
+/* 展开时箭头变化 */
+.qa-item.open .qa-question::after {
+  content: "－";
+}
+
+/* 答案（默认隐藏） */
+.qa-answer {
+  max-height: 0;
+  overflow: hidden;
+  color: #666;
+  line-height: 1.8;
+  transition: max-height 0.4s ease;
+  padding-right: 16px;
+}
+
+/* 展开答案 */
+.qa-item.open .qa-answer {
+  max-height: 300px;
+  margin-top: 12px;
+}
+
 @media (max-width: 600px) {
   .photo {
     width: 80%;
@@ -182,4 +233,38 @@ p {
     この愛は永遠に続く
   </p >
 
+<section class="qa-list">
+
+  <div class="qa-item">
+    <div class="qa-question">Q. 为什么要做这个网站？</div>
+    <div class="qa-answer">
+      因为我想把一些无法归类的情绪和片段，放在一个安静的地方。
+    </div>
+  </div>
+
+  <div class="qa-item">
+    <div class="qa-question">Q. 这些内容是真实的吗？</div>
+    <div class="qa-answer">
+      是真实的感受，但经过了整理与重写。
+    </div>
+  </div>
+
+  <div class="qa-item">
+    <div class="qa-question">Q. 以后会更新吗？</div>
+    <div class="qa-answer">
+      会，但不以频率为目标。
+    </div>
+  </div>
+
+</section>
+
   </main>
+  
+  <script>
+  document.querySelectorAll('.qa-question').forEach(question => {
+    question.addEventListener('click', () => {
+      const item = question.parentElement;
+      item.classList.toggle('open');
+    });
+  });
+</script>
