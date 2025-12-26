@@ -164,10 +164,9 @@ p {
   transform: translateY(-6px);
 
   transition:
-    max-height 0.5s ease,
-    opacity 0.35s ease,
-    transform 0.35s ease;
-}
+  max-height 0.55s cubic-bezier(0.4, 0, 0.2, 1),
+  opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+  transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
 /* 展开答案 */
 .qa-item.open .qa-answer {
