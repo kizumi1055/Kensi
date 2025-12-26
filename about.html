@@ -77,24 +77,41 @@ p {
   display: block;
 }
 
+/* 关于页面子导航 */
 .about-subnav {
   display: flex;
   justify-content: center;
-  gap: 24px;
-  margin: 40px 0;
+  gap: 28px;
+  margin: 48px 0 32px;
 }
 
 .about-subnav a {
   font-size: 13px;
-  color: #111;
+  letter-spacing: 0.1em;
+  color: #999;
   text-decoration: none;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
   border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
 }
 
+/* 悬停效果 */
 .about-subnav a:hover {
-  color: #666;
-  border-bottom: 1px solid #666;
+  color: #555;
+}
+
+/* 当前页提示 */
+.about-subnav a.active {
+  color: #111;
+  border-bottom: 1px solid #111;
+}
+
+/* 正文区域 */
+.about-content {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.9;
 }
 
 @media (max-width: 600px) {
