@@ -1,1 +1,195 @@
-.
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关于｜郁 × 景</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: "PingFang SC", sans-serif;
+  background: #fff;
+.color-black {
+  color: #111111; /* 黑色 */
+}
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  font-size: 11px;
+}
+
+  /* flex 容器 */
+  .flex-line {
+    display: flex;
+    justify-content: space-between; /* 左右分开 */
+    align-items: center;            /* 垂直居中 */
+    margin-bottom: 18px;
+  }
+  
+header {
+  text-align: center;
+  padding: 24px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+nav a {
+  margin: 0 14px;
+  text-decoration: none;
+  color: #111;
+  font-size: 13px;
+}
+
+main {
+  padding: 48px 24px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 150;
+  margin-bottom: 0px;
+}
+  
+h2 {
+  font-size: 15px;
+  font-weight: 120;
+  margin-bottom: 60px;
+}
+
+p {
+  margin-bottom: 18px;
+  line-height: 1.9;
+}
+
+.line {
+  width: 300px;
+  height: 1px;
+  background: #ccc;
+  margin: 60px auto;
+}
+
+.photo {
+  width: 55%;
+  max-width: 480px;
+  margin: 40px auto;
+  display: block;
+}
+
+/* 关于页面子导航 */
+.about-subnav {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin: 48px 0 32px;
+}
+
+.about-subnav a {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: #999;
+  text-decoration: none;
+  padding-bottom: 6px;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* 悬停效果 */
+.about-subnav a:hover {
+  color: #555;
+}
+
+/* 当前页提示 */
+.about-subnav a.active {
+  color: #111;
+  border-bottom: 1px solid #111;
+}
+
+/* 正文区域 */
+.about-content {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+@media (max-width: 600px) {
+  .photo {
+    width: 80%;
+  }
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+</style>
+</head>
+
+<body>
+<header>
+  <nav>
+    <a href="index.html">首页</a >
+    <a href="about.html">关于</a >
+    <a href="daily.html">日常</a >
+    <a href="crowning.html">冠名</a >
+  </nav>
+</header>
+
+<main>
+  <h1>介绍</h1>
+  
+<div class="about-subnav">
+  <a href="intro.html">基本</a>
+  <a href="qa.html" class="active">Q&A</a>
+  <a href="setting.html">小设</a>
+</div>
+
+  <img src="img/8.jpg" alt="郁景" class="photo">
+
+  <p class="flex-line">
+  <span class="color-blue">景卿是很细心的人</span>
+  <span class="color-red">我觉得郁谦止特别可爱</span>
+  </p >
+
+  <p class="flex-line">
+  <span class="color-blue">有时候会用嘴硬去包裹自己</span>
+  <span class="color-red">我就是特别特别喜欢她</span>
+  </p >
+
+  <p class="flex-line">
+  <span class="color-blue">有时候又会格外直球</span>
+  <span class="color-red">还经常给我做一些好玩的东西</span>
+  </p >
+
+  <p class="flex-line">
+  <span class="color-blue">在我眼里这是很可爱的萌点</span>
+  <span class="color-red">对我朋友圈都是她</span>
+  </p >
+
+  <p class="flex-line">
+  <span class="color-blue">她对我的夸赞和包容也好</span>
+  <span class="color-red">你怎么知道郁谦止是我老婆</span>
+  </p >
+
+  <p class="flex-line">
+  <span class="color-blue">她本身自带的脾气也好</span>
+  <span class="color-red">我们就是soulmate！</span>
+  </p >
+
+  <p class="flex-line">
+  <span class="color-blue">都是独一无二很珍贵的存在</span>
+  <span class="color-red">我们就是soulmate！</span>
+  </p >
+
+  <p class="flex-line">
+  <span class="color-blue">她是特别的 无可替代的</span>
+  <span class="color-red">我们就是soulmate！</span>
+  </p >
+
+  <p class="flex-line">
+  <span class="color-blue">和我同频的存在</span>
+  <span class="color-red">我们就是soulmate！</span>
+  </p >
+
+  <div class="line"></div>
