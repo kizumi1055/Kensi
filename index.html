@@ -60,6 +60,15 @@ p {
   margin: 40px auto;
   display: block;
 }
+/* 图片悬停微动 */
+.photo {
+  transition: transform 0.8s ease, filter 0.8s ease;
+}
+
+.photo:hover {
+  transform: scale(1.015);
+  filter: brightness(1.03);
+}
 
 @media (max-width: 600px) {
   .photo {
@@ -69,6 +78,43 @@ p {
 
 @keyframes fadeIn {
   to { opacity: 1; }
+}
+
+/* ===== 高级进入动画 ===== */
+
+/* 文字浮现 */
+.fade-up {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: fadeUp 1.2s ease forwards;
+}
+
+/* 图片浮现（更慢一点） */
+.fade-photo {
+  opacity: 0;
+  transform: scale(0.97);
+  animation: fadePhoto 1.6s ease forwards;
+}
+
+/* 延迟层级 */
+.delay-1 { animation-delay: 0.3s; }
+.delay-2 { animation-delay: 0.6s; }
+.delay-3 { animation-delay: 0.9s; }
+.delay-4 { animation-delay: 1.2s; }
+
+/* 动画定义 */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadePhoto {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 </style>
 </head>
@@ -84,33 +130,23 @@ p {
 </header>
 
 <main>
-  <h1>郁 × 景</h1>
+  <h1 class="fade-up delay-1">郁 × 景</h1>
   
- <img src="img/10.jpg" alt="郁景" class="photo">
+  <img src="img/10.jpg" alt="郁景" class="photo fade-photo delay-2">
 
-  <p>
-    这是一个神秘的地方
-  </p >
-  <p>
-    不要问为什么
-  </p >
-  <p>
-    总之很神秘就对了
-  </p >
-  <p>
-    什么？你还是要问为什么
-  </p >
-  <p>
-    没有为什么
-  </p >
+<p class="fade-up delay-2">这是一个神秘的地方</p>
+<p class="fade-up delay-3">不要问为什么</p>
+<p class="fade-up delay-4">总之很神秘就对了</p>
+<p class="fade-up delay-4">什么？你还是要问为什么</p>
+<p class="fade-up delay-4">没有为什么</p>
 
-  <img src="img/6.jpg" alt="郁景" class="photo">
+<img src="img/6.jpg" alt="郁景" class="photo fade-photo delay-3">
   
   <div class="line"></div>
 
-  <p>
-    向 郁 而 景 ｜ 向 卿 而 止
-  </p >
+<p class="fade-up delay-4">
+  向 郁 而 景 ｜ 向 卿 而 止
+</p>
 </main>
 </body>
 </html>
