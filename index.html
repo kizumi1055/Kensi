@@ -120,8 +120,9 @@ p {
 /* 可拖动图片 */
 .draggable {
   touch-action: none;
-  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-  will-change: transform;
+  transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+              opacity 0.4s ease;
+  will-change: transform, opacity;
 }
 </style>
 </head>
@@ -172,6 +173,8 @@ let dragging = false;
 img.addEventListener('touchstart', (e) => {
   dragging = true;
   img.style.transition = 'none';
+  img.style.opacity = '0.92';
+
   startX = e.touches[0].clientX - currentX;
   startY = e.touches[0].clientY - currentY;
 });
@@ -183,7 +186,12 @@ img.addEventListener('touchmove', (e) => {
   currentX = e.touches[0].clientX - startX;
   currentY = e.touches[0].clientY - startY;
 
-  img.style.transform = `translate(${currentX}px, ${currentY}px)`;
+  const rotate = currentX * 0.03;
+
+  img.style.transform = `
+    translate(${currentX}px, ${currentY}px)
+    rotate(${rotate}deg)
+  `;
 });
 
 img.addEventListener('touchend', () => {
@@ -192,8 +200,11 @@ img.addEventListener('touchend', () => {
   currentX = 0;
   currentY = 0;
 
-  img.style.transition = 'transform 0.8s cubic-bezier(0.22, 1, 0.36, 1)';
-  img.style.transform = 'translate(0, 0)';
+  img.style.transition =
+    'transform 0.9s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.5s ease';
+
+  img.style.transform = 'translate(0, 0) rotate(0deg)';
+  img.style.opacity = '1';
 });
 </script>
 </body>
