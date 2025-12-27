@@ -7,7 +7,123 @@
 
 <style>
 body {
+  margin: 0;
+  font-family: "PingFang SC", sans-serif;
+  background: #fff;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+  font-size: 11px;
+}
 
+.color-black {
+  color: #111111;
+}
+
+  /* flex 容器 */
+  .flex-line {
+    display: flex;
+    justify-content: space-between; /* 左右分开 */
+    align-items: center;            /* 垂直居中 */
+    margin-bottom: 18px;
+  }
+  
+header {
+  text-align: center;
+  padding: 24px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+nav a {
+  margin: 0 14px;
+  text-decoration: none;
+  color: #111;
+  font-size: 13px;
+}
+
+main {
+  padding: 48px 24px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 150;
+  margin-bottom: 0px;
+}
+  
+h2 {
+  font-size: 15px;
+  font-weight: 120;
+  margin-bottom: 60px;
+}
+
+p {
+  margin-bottom: 18px;
+  line-height: 1.9;
+}
+
+.line {
+  width: 300px;
+  height: 1px;
+  background: #ccc;
+  margin: 60px auto;
+}
+
+.photo {
+  width: 55%;
+  max-width: 480px;
+  margin: 40px auto;
+  display: block;
+}
+
+/* 关于页面子导航 */
+.about-subnav {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin: 48px 0 32px;
+}
+
+.about-subnav a {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: #999;
+  text-decoration: none;
+  padding-bottom: 6px;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+/* 悬停效果 */
+.about-subnav a:hover {
+  color: #555;
+}
+
+/* 当前页提示 */
+.about-subnav a.active {
+  color: #111;
+  border-bottom: 1px solid #111;
+}
+
+/* 正文区域 */
+.about-content {
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+@media (max-width: 600px) {
+  .photo {
+    width: 80%;
+  }
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
 </style>
 </head>
 
