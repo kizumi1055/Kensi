@@ -117,11 +117,44 @@ p {
   }
 }
 
-/* 可拖动图片 */
+/* ===== 基础样式（body / nav / photo 等） ===== */
+
+
+/* ===== 拖拽图片外层 ===== */
+.drag-wrapper {
+  position: relative;
+  width: 55%;
+  max-width: 480px;
+  margin: 40px auto;
+}
+
+/* 图片下方的隐藏文字 */
+.drag-hint {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: #666;
+  opacity: 0.5;
+  pointer-events: none;
+  text-align: center;
+}
+
+/* 只针对可拖的那张图 */
+.drag-wrapper .photo {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* ===== 拖拽行为提示 ===== */
 .draggable {
   touch-action: none;
   cursor: grab;
 }
+
 .draggable:active {
   cursor: grabbing;
 }
@@ -141,7 +174,10 @@ p {
 <main>
   <h1 class="fade-up delay-1">郁 × 景</h1>
   
-<img src="img/10.jpg" class="photo draggable">
+<div class="drag-wrapper">
+  <p class="drag-hint">哈哈想不到吧这是可以拖的</p>
+  <img src="img/10.jpg" class="photo draggable">
+</div>
 
 <p class="fade-up delay-2">这是一个神秘的地方</p>
 <p class="fade-up delay-3">不要问为什么</p>
