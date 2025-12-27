@@ -119,13 +119,17 @@ p {
 
 /* ===== 基础样式（body / nav / photo 等） ===== */
 
-
 /* ===== 拖拽图片外层 ===== */
 .drag-wrapper {
   position: relative;
   width: 55%;
   max-width: 480px;
   margin: 40px auto;
+}
+/* 拖拽图片本身 */
+.drag-wrapper .photo {
+  width: 100%;       /* 图片吃满外层 */
+  display: block;    /* 去掉图片底部空隙 */
 }
 
 /* 图片下方的隐藏文字 */
